@@ -1,0 +1,66 @@
+<%@ page isELIgnored="false" language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="${ctx}/public/love/timeshaft/css/reset.css"> <!-- CSS reset -->
+	<link rel="stylesheet" href="${ctx}/public/love/timeshaft/css/style.css"> <!-- Resource style -->
+	<script src="${ctx}/public/love/timeshaft/js/modernizr.js"></script> <!-- Modernizr -->
+	<title>最好的时光</title>
+	<jsp:include page="${ctx}/WEB-INF/pages/core/simpleheader.jsp"/>
+	<style>body,h1{font-family: "microsoft yahei";}</style>
+</head>
+<body>
+	<header>
+		<h1>时间无言，唯有记忆</h1>
+	</header>
+
+	<section id="cd-timeline" class="cd-container">
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="${ctx}/public/love/timeshaft/img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>相识</h2>
+				<p>彼时一如平常的的刷着段子，一份好友申请打破了宁静，你，闯入了我的世界。原来天涯两颗心即刻有了关系...</p>
+				<a href="${ctx}/love/tpicture?name=20180410" class="cd-read-more">查看详情</a>
+				<span class="cd-date">2018年4月10日</span>
+			</div>
+		</div>
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-picture">
+				<img src="${ctx}/public/love/timeshaft/img/cd-icon-picture.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>见面</h2>
+				<p>带着期待和担心，一早便踏上了前往古城的道路，想着将要见到一个可爱的人儿，心里面就高兴的不行，但是又怕相见即相离，心里便担忧的不行。不管怎么说，最后我们还是见到了...</p>
+				<a href="${ctx}/love/tpicture?name=20180421" class="cd-read-more">查看详情</a>
+				<span class="cd-date">2018年4月21日</span>
+			</div>
+		</div>
+
+		<div class="cd-timeline-block">
+			<div class="cd-timeline-img cd-movie">
+				<img src="${ctx}/public/love/timeshaft/img/cd-icon-movie.svg" alt="Picture">
+			</div> <!-- cd-timeline-img -->
+
+			<div class="cd-timeline-content">
+				<h2>相知</h2>
+				<p>未完待续...</p>
+				<a href="#0" class="cd-read-more">查看详情</a>
+				<span class="cd-date">2018年5月19日</span>
+			</div>
+		</div>
+	</section> <!-- cd-timeline -->
+<script src="${ctx}/public/love/timeshaft/js/jquery.min.js"></script>
+<script src="${ctx}/public/love/timeshaft/js/main.js"></script> <!-- Resource jQuery -->
+	<audio autoplay="autopaly" loop="loop">
+		<source src="${ctx}/public/love/timeshaft/bg.mp3" type="audio/mp3"/>
+	</audio>
+</body>
+</html>

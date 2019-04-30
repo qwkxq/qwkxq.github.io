@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>我想对你说</title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style type="text/css">
+    @font-face {
+      font-family: digit;
+      src: url('digital-7_mono.ttf') format("truetype");
+    }
+  </style>
+  <link href="/custom/qx/resources/main/default.css" type="text/css" rel="stylesheet">
+  <script type="text/javascript" src="/custom/qx/resources/main/jquery.js"></script>
+  <script type="text/javascript" src="/custom/qx/resources/main/garden.js"></script>
+  <script type="text/javascript" src="/custom/qx/resources/main/functions.js"></script>
+</head>
+
+<body>
+<audio autoplay="autopaly" loop="loop">
+  <source src="/custom/qx/resources/qx1.mp3" type="audio/mp3"/>
+</audio>
+<div id="mainDiv">
+  <div id="content">
+    <div id="code">
+      <span class="comments"/><span class="comments">今天是七夕节，有好多话跟你讲，从哪说起呢？ 是一首诗：</span><br/><br/><br/>
+      <span class="space">仲夏夜感怀</span><br/>
+      <span class="space">阆苑仙葩玉无暇，人间只有此新花。</span><br/>
+      <span class="space">玉宸相映绛珠草，三生石畔遇见她。</span><br/>
+      <span class="space">枉自凝眉空嗟呀，任凭明珠冬至夏。</span><br/>
+      <span class="space">千里只是离远去，或许生来是彩霞。</span><br/>
+      <span class="space">伸手只似水中月，抬头又像镜中花。</span><br/>
+      <span class="space">从此纵有多少话，车马不到清风达。</span><br/>
+      <span class="space">此情不知何处发，一往而深怎虚化。</span><br/>
+      <span class="space">桩桩件件全关情，日日夜夜总牵挂。</span><br/>
+      <span class="space">愿为磐石不转移，卿作芦苇韧不拓。</span><br/>
+      <span class="space">岁月静好可回首，且以情深共白头。</span><br/><br/><br/>
+      <span class="comments"/><span class="comments">或是是一篇代码：</span><br/><br/><br/>
+      <span class="comments">// 我. </span><br/>
+      Boy i = <span class="keyword">new</span> Boy(<span class="string">"向涛"</span>);<br/>
+      <span class="comments">// 你. </span><br/>
+      Girl u = <span class="keyword">new</span> Girl(<span class="string">"高佳妮"</span>);<br/>
+      <span class="comments">// 2018年4月10日晚18点39分20秒，我爱上了你. </span><br/>
+      i.love(u);<br/>
+      <span class="comments">// 一开始没有彼此依偎，两颗心好远.</span><br/>
+      u.keepAwayFrom(i);<br/>
+      <span class="comments">// 一条狗改变了我们.</span><br/>
+      Dog son = new Dog(); i.giveYou(dog);<br/>
+      <span class="comments">// 好的坏的，后面又发生了好多事 .</span><br/>
+      i.doManyFor(u); u.doManyFor(i);<br/>
+      <span class="comments">// 一路走过来，我们更加相爱，这一点从未变过.</span><br/>
+      i.loveMoreFor(u); u.loveMoreFor(i);<br/>
+      <span class="comments">// 愿明日更好，执子之手，患难与共.</span><br/>
+      <span class="keyword">while</span> (isAccept) {<br/>
+      <span class="placeholder"/>i.waitFor(u);<br/>
+      }<br/><br/><br/>
+      <span class="comments"/><span class="comments">即使如此，还是有好多话没讲完，我们的故事还没结束，与你相遇，我真的好幸运，七夕节快乐！ 西北夜空，今夜有我的祝福！</span>
+    </div>
+    <div id="loveHeart">
+      <canvas id="garden"></canvas>
+      <div id="words">
+        <div id="messages">
+          &nbsp;&nbsp;&nbsp;&nbsp;高佳妮，七夕节快乐!<br/>
+          &nbsp;&nbsp;&nbsp;&nbsp;<a href='/custom/qx/pages/start/more.html' id="accept">more ...</a>
+        </div>
+        <div id="loveu">
+          永远爱你.<br/>
+          <div class="signature">- 向涛</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  var offsetX = $("#loveHeart").width() / 2;
+  var offsetY = $("#loveHeart").height() / 2 - 55;
+
+  if (!document.createElement('canvas').getContext) {
+    var msg = document.createElement("div");
+    msg.id = "errorMsg";
+    msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+    document.body.appendChild(msg);
+    $("#code").css("display", "none")
+    $("#copyright").css("position", "absolute");
+    $("#copyright").css("bottom", "10px");
+    document.execCommand("stop");
+  } else {
+    setTimeout(function () {
+      adjustWordsPosition();
+      startHeartAnimation();
+    }, 10000);
+
+    $("#accept").click(function () {
+      $(this).hide();
+      $("#elapseClock").show();
+      var together = new Date();
+      timeElapse(together);
+      setInterval(function () {
+        timeElapse(together);
+      }, 500);
+    })
+    adjustCodePosition();
+    $("#code").typewriter();
+  }
+</script>
+</body>
+</html>
