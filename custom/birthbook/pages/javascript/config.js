@@ -182,7 +182,7 @@ btnTableOfContent:["btnBookMark"]
 	bookConfig.topMargin="10";bookConfig.bottomMargin="10";bookConfig.leftMargin="10";bookConfig.rightMargin="10";bookConfig.leftMarginOnMobile="0";
 	bookConfig.topMarginOnMobile="0";bookConfig.rightMarginOnMobile="0";bookConfig.bottomMarginOnMobile="0";bookConfig.maxWidthToSmallMode="400";
 	bookConfig.maxHeightToSmallMode="300";bookConfig.LinkDownColor="#800080";bookConfig.LinkAlpha="0.2";bookConfig.OpenWindow="Blank";
-	bookConfig.showLinkHint="No";bookConfig.searchFontColor="#FFFDDD";bookConfig.totalPageCount=29;bookConfig.largePageWidth=1024;
+	bookConfig.showLinkHint="No";bookConfig.searchFontColor="#FFFDDD";bookConfig.totalPageCount=28;bookConfig.largePageWidth=1024;
 	bookConfig.largePageHeight=1448;;bookConfig.securityType="1";bookConfig.bookTitle="生日书";
 	// bookConfig.productName="birthdayBook";
 	// bookConfig.homePage="http://www.birthdayBook.com/";
