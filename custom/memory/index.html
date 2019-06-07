@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
+  <link rel="stylesheet" href="res/css/index.css">
+</head>
+
+<body>
+<div style="width: 80%; margin: 5rem auto;">
+  <span id="ityped"></span>
+</div>
+<dl>
+  <dt>2018-04-10</dt>
+  <dd>结缘于社交媒体</dd>
+  <dt>2018-04-21</dt>
+  <dd>第一次见面</dd>
+  <dd>路痴、剪指甲、吃面、回学校、成都</dd>
+  <dt>2018-04-30</dt>
+  <dd>第一只小狗</dd>
+  <dd>柯基、腿腿、古城、嘉陵江，大鱼海棠、白塔山</dd>
+  <dt>2018-05-13</dt>
+  <dd>小狗带回成都治病</dd>
+  <dd>后悔、坚强</dd>
+  <dt>2018-05-18</dt>
+  <dd>小狗过世</dd>
+  <dd>噩耗、伤心、不舍、面试</dd>
+  <dt>2018-05-21</dt>
+  <dd><入职</dd>
+  <dd>香水、台灯、印章</dd>
+  <dt>2018-05-26</dt>
+  <dd>崩溃</dd>
+  <dd>不解、酒醉、开始</dd>
+  <dt>2018-06-02</dt>
+  <dd>感情加深</dd>
+  <dd>古城、旗袍、骰子、壁纸、烤鱼、陪教</dd>
+  <dt>2018-08-08</dt>
+  <dd>别离</dd>
+  <dd>电影、动植物园、国色天香、回家、惊喜、送别</dd>
+  <dt>2018-09-27</dt>
+  <dd>出发</dd>
+  <dd>国庆、飞机、火车、情侣装、喀什、帕米尔、艾提尕尔、阿帕克霍加</dd>
+  <dt>2019-01-13</dt>
+  <dd>回来</dd>
+  <dd>快递、布置、生活、妻子、家长、责任</dd>
+  <dt>2019-02-22</dt>
+  <dd>再别</dd>
+  <dd>落寞、不舍、等待、相信</dd>
+  <dt>2019-04-03</dt>
+  <dd>重逢</dd>
+  <dd>生日、人偶、相册、蛋糕、达瓦昆</dd>
+  <dt>更多的故事……</dt>
+</dl>
+<!--style="position: fixed; bottom: 0;"-->
+<ol>
+  <li><a href="">初识之喜</a></li>
+  <li><a href="">爱情之树</a></li>
+  <li><a href="">女神之美</a></li>
+  <li><a href="">生日之书</a></li>
+  <li><a href="">回忆之味</a></li>
+</ol>
+<script src="https://unpkg.com/ityped@0.0.5"></script>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="res/js/index.js"></script>
+<script>
+  var together = new Date();
+  together.setFullYear(2018, 3, 10); 			//时间年月日
+  together.setHours(18);						//小时
+  together.setMinutes(34);					//分钟
+  together.setSeconds(0);					//秒前一位
+  together.setMilliseconds(2);				//秒第二
+  ityped.init('#ityped', {
+    strings:['不知不觉间，我们相识的时光已经是第423天了。我的生命是缺失的，幸而有你，它因而变得完全；我的灵魂是落寞的，感恩有你，它熊熊燃起火焰。' +
+    '我的人生是挣扎的，珍惜有你，它从此一往无前。一路走来，没有一天不想你，没有一天不念你，没有一天忘记你。你永远在我心间，我一直都爱你，不管是午夜梦回，' +
+    ' 还是朗朗青天。 是你总让我放不下，也是你让我牵挂。爱你之情不变，思你之源千万，可以是曾经之地，可以是相似之人，可以是旧日之物，可以是塌下之眠。可以一念之间，可以心心念念，可以故地重游，' +
+    '可以宛如初见。 我爱你，永远永远，我想你，永远永远，珍惜，永远永远。只愿岁月静好，时时魂牵梦绕，执子之手，生生与子偕老。'],
+    typeSpeed:300,
+    startDelay: 200,
+    loop: false
+  });
+</script>
+</body>
+
+</html>
