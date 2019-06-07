@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[Encypt5]]></title>
+    <url>%2F2019%2F06%2F07%2Findex5%2F</url>
+    <content type="text"><![CDATA[开始吧 function goContent() { setTimeout(function(){ location.href='/custom/memory/index.html' },1000); }]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Encypt4]]></title>
     <url>%2F2019%2F04%2F17%2Findex4%2F</url>
     <content type="text"><![CDATA[开始吧 function goContent() { setTimeout(function(){ location.href='/custom/birthbook/pages/index.html' },1000); }]]></content>
